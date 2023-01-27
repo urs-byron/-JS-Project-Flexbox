@@ -1,0 +1,240 @@
+@media screen and (max-width: 890px) {
+  /* -------- */
+  /* HEADER */
+  /* -------- */
+
+  header {
+    height: 680px;
+  }
+
+  .header-container {
+    --header-caption-width: 50%;
+    --header-head-ff-size: 2.25rem;
+    --hero-btn-ff-size: 1.6rem;
+  }
+
+  /* -------- */
+  /* NAVIGATION */
+  /* -------- */
+
+  .nav-container,
+  .nav-container > *,
+  .primary-nav > *,
+  .primary-nav-items > li {
+    display: flex;
+    flex-flow: var(--dis-f-fl, row) nowrap;
+    justify-content: var(--dis-f-jc, space-between);
+    align-items: var(--dis-f-ai, center);
+  }
+  .nav-container {
+    width: 100vw;
+    --nav-container-max-w: 890px;
+  }
+
+  .nav-btn,
+  .primary-nav {
+    position: fixed;
+    top: var(--p-t);
+    right: var(--p-r);
+  }
+
+  .nav-btn {
+    padding: 7.5px 12.5px;
+    border-radius: var(--dd-gen-border-rad);
+
+    --p-t: calc(2.5rem - 7.5px);
+    --p-r: 30px;
+
+    font-size: var(--nav-btn-ff-size, 1.5rem);
+
+    z-index: 1;
+  }
+
+  .primary-nav {
+    width: 275px;
+    height: 300px;
+
+    border-radius: var(--dd-gen-border-rad);
+
+    --dis-f-fl: column;
+    --dis-f-ai: stretch;
+
+    --p-t: 9.4rem;
+    --p-r: -300px;
+    z-index: 100;
+
+    background: linear-gradient(white 0 0) no-repeat;
+    box-shadow: -10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+    opacity: var(--o, 0);
+    /* scale: var(--tr-sx, 0) 1; */
+    transform-origin: right;
+
+    transition: opacity 0.15s ease-in 0.05s, scale 0.2s linear;
+  }
+
+  .primary-nav-open {
+    --p-r: 20px;
+    --o: 1;
+    --tr-sx: 1;
+  }
+
+  .primary-nav-items {
+    height: 85%;
+
+    border-top-left-radius: var(--dd-gen-border-rad);
+    border-top-right-radius: var(--dd-gen-border-rad);
+
+    --dis-f-fl: column;
+  }
+  .primary-nav-items > li {
+    height: 25%;
+    padding-right: 15px;
+    padding-left: var(--ff-ti, 15px);
+
+    --dis-f-fl: row;
+    --dis-f-ai: center;
+
+    background: rgba(0, 0, 0, var(--bgi, 0));
+
+    color: black;
+
+    transition: var(--tt-bold-transition);
+  }
+  .primary-nav-items > li:hover {
+    --ff-ti: 35px;
+    --bgi: 0.15;
+  }
+
+  .nav-log-account {
+    height: 15%;
+    border-bottom-left-radius: var(--dd-gen-border-rad);
+    border-bottom-right-radius: var(--dd-gen-border-rad);
+
+    --dis-f-jc: center;
+    --dis-f-ai: center;
+  }
+
+  /* -------- */
+  /* ABOUT */
+  /* -------- */
+
+  .about {
+    height: 800px;
+  }
+
+  .about-container {
+    --about-max-width: 890px;
+    --about-head-ff-size: 2.25rem;
+
+    --about-dis-flex-dir: column;
+    --about-left-dis: none;
+
+    --about-info-width: 100%;
+    --about-info-bg-size: cover;
+    --about-info-bg-opac: 0;
+
+    --about-caption-padding: 3rem 4rem;
+    --about-content-ff-size: 1.2rem;
+
+    --t-prod-img-set-height: 30%;
+    --t-prod-img-set-width: 170px;
+    --t-prod-ff-size: 1.5rem;
+    --t-prod-span-padding-top: 35px;
+    --t-prod-img-width: 80%;
+
+    --product-arrows: 140px;
+    --product-arrow-ff-size: 30px;
+    --product-move-x: -750px;
+    --t-prod-set-tr-x: 1;
+  }
+
+  /* -------- */
+  /* PRODUCTS */
+  /* -------- */
+
+  .product-container {
+    --dis-f: column;
+
+    --headline-padding: 0 2rem;
+    --headline-head-ff-size: 2.25rem;
+    /* --headline-top-new-ff-size: 0rem; */
+    --headline-ces-ff-size: 27px;
+    --headline-p-ff-size: 1rem;
+    --consoles-head-ff-size: 2rem;
+    --handhelds-head-ff-size: 2rem;
+    --controllers-head-ff-size: 0.8rem;
+    --extra-games-head-ff-size: 1.5rem;
+
+    justify-content: space-between;
+  }
+
+  .headline,
+  .f0,
+  .f2,
+  .handhelds,
+  .games,
+  .extra {
+    width: 100%;
+    height: 50%;
+  }
+
+  .f1,
+  .consoles,
+  .controllers,
+  .f3 {
+    width: 50%;
+    height: 100%;
+  }
+  .f0 {
+    height: 60%;
+    --dis-f: row-reverse;
+  }
+  .f1 {
+    --dis-f: column-reverse;
+  }
+  .f2 {
+    --dis-f: row;
+  }
+  .f3 {
+    --dis-f: column;
+  }
+
+  .headline {
+    border-style: none none solid none;
+  }
+  .headline > .opaque-bg {
+    background-color: rgba(0, 0, 0, var(--h-o, 0.5));
+  }
+  .headline > .opaque-bg a {
+    height: 25%;
+    margin-top: 1rem;
+  }
+
+  .consoles {
+    border-style: none none none solid;
+  }
+  .handhelds {
+    border-style: solid none none none;
+  }
+  .controllers {
+    border-style: none solid none none;
+  }
+  .games {
+    border-style: none none solid none;
+  }
+  .extra {
+    border-style: none;
+  }
+
+  /* -------- */
+  /* FOOTER */
+  /* -------- */
+
+  .footer-container {
+    --footer-li-ff-size: 2rem;
+    --footer-p-ff-size: 12.5px;
+
+    padding-bottom: 2rem;
+    flex-flow: column;
+  }
+}

@@ -1,0 +1,100 @@
+@media screen and (max-width: 414px) {
+  /* -------- */
+  /* GENERAL */
+  /* -------- */
+
+  .logo {
+    --logo-ff-size: 25px;
+  }
+
+  /* -------- */
+  /* NAVIGATION */
+  /* -------- */
+
+  nav {
+    --nav-h: 5rem;
+  }
+  .nav-container {
+    --nav-container-max-w: 414px;
+    --nav-btn-ff-size: 1.25rem;
+  }
+  .nav-btn {
+    --p-t: 20px;
+    --p-r: 30px;
+  }
+  .primary-nav {
+    --p-t: 7.475rem;
+  }
+
+  /* -------- */
+  /* HEADER */
+  /* -------- */
+
+  header {
+    height: 600px;
+  }
+
+  .header-container {
+    --header-conainer-max-h: 700px;
+    --header-head-ff-size: 2rem;
+
+    --header-caption-top: 7rem;
+    --header-content-ff-size: 1.1rem;
+
+    --hero-btn-ff-size: 1.6rem;
+  }
+
+  /* -------- */
+  /* SALE */
+  /* -------- */
+
+  .sale {
+    --sale-top: 5rem;
+  }
+
+  /* -------- */
+  /* ABOUT */
+  /* -------- */
+
+  .about {
+    height: 750px;
+  }
+
+  .about-container {
+    --about-caption-padding: 3rem 1rem 3rem 4rem;
+    --about-head-ff-size: 2rem;
+    --about-content-ff-size: 1.1rem;
+
+    --t-prod-img-set-width: 150px;
+    --t-prod-span-padding-top: 30px;
+
+    --product-arrows: 135px;
+  }
+
+  /* -------- */
+  /* PRODUCTS */
+  /* -------- */
+
+  .product-container {
+    --headline-head-ff-size: 2rem;
+    --headline-top-new-ff-size: 0.5rem;
+    --headline-ces-ff-size: 27.5px;
+    --headline-p-ff-size: 0.9rem;
+    --consoles-head-ff-size: 1.5rem;
+    --handhelds-head-ff-size: 1.5rem;
+    --controllers-head-ff-size: 0.6rem;
+    --extra-games-head-ff-size: 1rem;
+  }
+  .products .logo {
+    --logo-ff-size: 25px;
+  }
+
+  /* -------- */
+  /* FOOTER */
+  /* -------- */
+
+  .footer-container {
+    --footer-li-ff-size: 1.5rem;
+    --footer-p-ff-size: 10px;
+  }
+}
